@@ -15,7 +15,7 @@ const SignIn = () => {
     }
     const readValue=()=>{
         console.log(data)
-        axios.post("http://localhost:8080/signin",data).then(
+        axios.post("http://localhost:8006/signin",data).then(
             (response)=>{
                 console.log(response.data)
                 if(response.data.status=="success")
